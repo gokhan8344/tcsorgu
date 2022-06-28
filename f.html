@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input id="tp" type="text">
+        <button id="Btn" onclick="topla(tp)">topla</button>
+    </div>
+    <script>
+        var i, tp, j, even = 0, toplam=0, z, result, odd = 0;
+        tp = document.getElementById("tp")
+        Btn = document.getElementById("Btn")
+        function topla() {
+            for (i = 0; i < 9; i += 2) {
+                odd += Number(tp.value[i]);
+            }
+            console.log(odd);
+
+
+
+            odd *= 7;
+            console.log(odd);
+            for (j = 1; j < 8; j += 2) {
+                even += Number(tp.value[j]);
+            }
+            console.log(even);
+
+            for (z = 0; z < 10; z++) {
+                toplam += Number(tp.value[z]);
+
+            }
+            console.log(toplam);
+
+
+
+            result = Math.abs(odd - even);
+            console.log(result);
+
+        }
+
+    </script>
+</body>
+
+</html>

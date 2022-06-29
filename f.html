@@ -14,7 +14,7 @@
         <button id="Btn" onclick="topla(tp)">topla</button>
     </div>
     <script>
-        var i, tp, j, even = 0, toplam=0, z, result, odd = 0;
+        var i, tp, j, even = 0, toplam = 0, z, result, odd = 0;
         tp = document.getElementById("tp")
         Btn = document.getElementById("Btn")
         function topla() {
@@ -32,7 +32,7 @@
             }
             console.log(even);
 
-            for (z = 0; z < 10; z++) {
+            for (z = 0; z <= 10; z++) {
                 toplam += Number(tp.value[z]);
 
             }

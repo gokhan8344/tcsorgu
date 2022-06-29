@@ -1,18 +1,18 @@
 
 
-var tc, Btn, resultFalse, resultTrue, odd = 0, tcTotal=0, even = 0, Result, z, i, j;
+var tc, Btn, resultFalse, resultTrue, odd = 0, tcTotal=0, even = 0, Result, z=0, i=0, j=1;
 tc = document.getElementById("tc")
 Btn = document.getElementById("Btn")
 resultFalse = document.getElementById("resultFalse")
 resultTrue = document.getElementById("resultTrue")
 
 Btn.addEventListener('click', function () {
-    for (i = 0; i < 9; i += 2) {
+    for (i = 0; i <= 9; i += 2) {
         odd += Number(tc.value[i]);
     }
 
     odd *= 7;
-    for (j = 1; i < 8; j += 2) {
+    for (j = 1; j < 8; j += 2) {
         even += Number(tc.value[j]);
     }
     Result = Math.abs(odd - even);
